@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+    flex: 1;
+}
+
+h1 {
+    margin-top: 50px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+}
+
+input, textarea {
+    width: 70%;
+    padding: 13px 12px;
+    margin: 5px;
+    box-sizing: border-box;
+    border: none;
+    resize: none;
+    border: 2px solid #a81d1d;
+}
+
+textarea[name="resumo"] {
+    height: 180px;
+}
+
+input[type="text"], input[type="number"] {
+    width: 23%;
+    margin: 8px;
+    text-align: center;
+}
+
+input[name="nome"] {
+    font-weight: bold;
+    width: 42%;
+    font-size: 20px;
+}
+
+button, a.button {
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 10px 10px;
+    background-color: #b82525;
+    color: white;
+    padding: 15px 34px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn-voltar {
+    background-color: rgb(119, 119, 119);
+}
+
+.btn-voltar:hover{
+    background-color: #0d180e;
+}
+
+button:hover, a.button:hover {
+    background-color: #3a0606;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 15px;
+    margin-top: 13px;
+    margin-bottom: 15px;
+    width: 36%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 60px rgba(0,0,0,0.3);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bio {
+    margin: 20px auto;
+    padding: 40px;
+    max-width: 350px;
+    max-height: 550px;
+    overflow-y: auto;
+    box-shadow: 0 0 60px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bio img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 300px;
+}
+
+.bio h2 {
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+.bio p {
+    text-align: justify;
+    margin-bottom: 3px;
+}
+
+#foto-wrapper label {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 18px;
+    color: #999;
+    cursor: pointer;
+    z-index: 1;
+    white-space: nowrap;
+
+}
+
+#foto-wrapper input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#foto-wrapper {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border: 2px dashed #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#foto-wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+    display: none;
+}
+
+
