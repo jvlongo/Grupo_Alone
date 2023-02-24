@@ -4,6 +4,7 @@
     <title>Inclusão de Novos Integrantes</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script type="text/javascript">
+        //visualização da imagem selecionada na página
         function previewImage() {
             var preview = document.querySelector('#foto-wrapper img');
             var file = document.querySelector('input[type=file]').files[0];
