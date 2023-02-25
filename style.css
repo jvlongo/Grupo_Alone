@@ -40,7 +40,7 @@ textarea[name="resumo"] {
 }
 
 input[type="text"], input[type="number"] {
-    width: 23%;
+    width: 26%;
     margin: 8px;
     text-align: center;
 }
