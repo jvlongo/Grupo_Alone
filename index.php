@@ -8,10 +8,14 @@
 	<h1>Sobre o Grupo Alone</h1>
 
 	<?php
+	// Inclui o arquivo de conexão com o banco de dados
 	include('db_connect.php');
+	// Define a consulta SQL para buscar todas as bios
 	$sql = "SELECT * FROM bio";
+	// Executa a consulta e armazena o resultado em uma variável
 	$result = $conn->query($sql);
 
+	// Se houver resultados, exibe cada bio em um bloco separado
 	if ($result->num_rows > 0) {
 		while($row = $result->fetch_assoc()) {
 			echo "<div class='bio'>";
@@ -23,11 +27,12 @@
 			echo "</div>";
 		}
 	} else {
-		echo "0 results";
+		echo "Nenhuma bio encontrada.";
 	}
+	// Fecha a conexão com o banco de dados
 	$conn->close();
 	?>
-
+	<!-- Botão para adicionar uma nova bio -->
 	<button onclick="location.href='cadastro.php'">Incluir Novo</button>
 
 </body>

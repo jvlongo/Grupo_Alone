@@ -49,8 +49,9 @@
 <body>
 
 <h1>Inclusão de Novos Integrantes</h1>
-<!-- Exibir um formulário para que o usuário possa inserir informações sobre um novo integrante. -->
+ <!-- Este formulário será enviado para o arquivo "add_bio.php" no servidor quando o botão "Salvar" for pressionado. -->
 <form name="myForm" action="add_bio.php" method="post" enctype="multipart/form-data" onsubmit="return validateForm()">
+    <!-- Campo de upload de imagem -->
     <div id="foto-wrapper">
         <label id="foto-label" for="foto">Incluir foto</label>
         <input type="file" name="foto" id="foto" accept="image/*" onchange="previewImage()" required>
@@ -65,10 +66,11 @@
 
     <textarea name="resumo" id="resumo" placeholder="Escreva a bio aqui..."></textarea>
 
+   
     <button type="submit">Salvar</button>
 
 </form>
-
+<!-- Botão de voltar para a página inicial -->        
 <button class="btn-voltar" onclick="location.href='index.php'">Voltar</button>
 
 </body>

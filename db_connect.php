@@ -4,7 +4,7 @@ $username = "root";
 $password = "";
 $dbname = "cadastro_bio";
 
-// Cria a conexão
+// Cria a conexão com o banco de dados
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 // Verifica a conexão
